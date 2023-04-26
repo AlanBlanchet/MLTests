@@ -1,0 +1,15 @@
+repos:
+- repo: https://github.com/ambv/black
+  rev: 22.12.0
+  hooks:
+  - id: black
+    types: [text]
+    files: \.pyi?$
+- repo: local
+  hooks:
+  - id: strip-notebooks
+    name: Strip Notebooks
+    language: system
+    types:
+    - shell
+    entry: ./tools/strip-notebooks.sh

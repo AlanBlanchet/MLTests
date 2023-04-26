@@ -1,0 +1,5 @@
+#!/bin/sh
+
+jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace **/*.ipynb
+
+git add **/*.ipynb

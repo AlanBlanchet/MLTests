@@ -1,0 +1,7 @@
+data/
+datasets/
+media/
+mnist/
+__pycache__
+*.pytest_cache
+*.egg-info
